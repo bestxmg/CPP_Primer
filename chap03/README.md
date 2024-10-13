@@ -161,7 +161,7 @@ For those that are not legal, explain why they are illegal.
 (c) vector<string> svec(10, "null");
 ```
 
-(a) legal: define and value initialize a _vector_ whose elements are _vector_ of _int_.
+(a) uncertain: In the modern C++ standard(like C++ 11),it define and default initialize a _vector_ whose elements are _vector_ of _int_. However, In the past C++ standard(like C++ 98), it will raise compiling error for lacking a _space_ between the two closing angle bracket of the outer _vector_.
 
 (b) illegal: types of _svec_ and _ivec_ are different, we can't initialize a _vector_ with another of 
 different types.
